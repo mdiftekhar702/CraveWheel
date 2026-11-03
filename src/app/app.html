@@ -1,37 +1,357 @@
+
 <div class="page">
-  <div class="snake-ribbon" aria-hidden="true"><svg viewBox="0 0 1440 900" preserveAspectRatio="none"><defs><linearGradient id="craveTrail" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#F45B1C" stop-opacity="0"/><stop offset="35%" stop-color="#FFB18D" stop-opacity="0.8"/><stop offset="70%" stop-color="#F45B1C" stop-opacity="0.65"/><stop offset="100%" stop-color="#FFD2BD" stop-opacity="0"/></linearGradient><filter id="craveGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter></defs><path class="crave-trail-glow" d="M 140 55 C 210 10, 300 20, 370 65 S 510 105, 600 55 S 780 15, 900 75 S 1120 150, 1280 75 C 1430 0, 1470 180, 1390 300 S 1280 520, 1400 650 S 1320 850, 1150 850"/><path class="crave-trail" d="M 140 55 C 210 10, 300 20, 370 65 S 510 105, 600 55 S 780 15, 900 75 S 1120 150, 1280 75 C 1430 0, 1470 180, 1390 300 S 1280 520, 1400 650 S 1320 850, 1150 850"/></svg></div>
-  <header class="navbar"><a class="brand" href="/"><span class="brand-icon">C</span><span>CraveWheel</span></a><nav class="nav-links"><a href="/">Home</a><a href="#about">About</a><button type="button" class="nav-favorites" (click)="toggleFavoritesView()">{{ showFavorites() ? 'Back to discovery' : 'Favourites' }} <span>({{ favoriteFoodIds().length + favoriteRestaurants().length }})</span></button></nav></header>
+  <div class="snake-ribbon" aria-hidden="true">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="craveTrail" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#F45B1C" stop-opacity="0"/>
+          <stop offset="35%" stop-color="#FFB18D" stop-opacity="0.8"/>
+          <stop offset="70%" stop-color="#F45B1C" stop-opacity="0.65"/>
+          <stop offset="100%" stop-color="#FFD2BD" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="craveGlow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="7"/>
+        </filter>
+      </defs>
+      <path class="crave-trail-glow" d="M 140 55 C 210 10, 300 20, 370 65 S 510 105, 600 55 S 780 15, 900 75 S 1120 150, 1280 75 C 1430 0, 1470 180, 1390 300 S 1280 520, 1400 650 S 1320 850, 1150 850"/>
+      <path class="crave-trail" d="M 140 55 C 210 10, 300 20, 370 65 S 510 105, 600 55 S 780 15, 900 75 S 1120 150, 1280 75 C 1430 0, 1470 180, 1390 300 S 1280 520, 1400 650 S 1320 850, 1150 850"/>
+    </svg>
+  </div>
+
+  <header class="navbar">
+    <a class="brand" href="/">
+      <span class="brand-icon">C</span>
+      <span>CraveWheel</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="#about">About</a>
+      <button type="button" class="nav-favorites" (click)="toggleFavoritesView()">
+        {{ showFavorites() ? 'Back to discovery' : 'Favourites' }}
+        <span>({{ favoriteFoodIds().length + favoriteRestaurants().length }})</span>
+      </button>
+    </nav>
+  </header>
+
   <main class="main-content">
     @if (!showFavorites()) {
-      <section class="intro"><p class="eyebrow">YOUR FOOD DISCOVERY PARTNER</p><h1>What are you craving today?</h1><p class="subtitle">Choose what you enjoy. Let CraveWheel decide the food category.</p></section>
-      <section class="filter-card"><div class="section-heading"><h2>Choose your preferences</h2><p>These filters apply to dishes inside every category.</p></div>
-        <div class="filter-group"><label>Food preference</label><div class="option-group"><button type="button" class="option" [class.active]="foodPreference()==='Veg'" (click)="selectFoodPreference('Veg')">Veg</button><button type="button" class="option" [class.active]="foodPreference()==='Non-Veg'" (click)="selectFoodPreference('Non-Veg')">Non-Veg</button><button type="button" class="option" [class.active]="foodPreference()==='Both'" (click)="selectFoodPreference('Both')">Both</button></div></div>
-        <div class="wheel-section"><div class="wheel-heading"><h2>Let the wheel decide</h2><p>The wheel randomly selects a food category.</p></div><div class="wheel-stage"><div class="wheel-pointer"></div><div class="wheel-outer"><div class="wheel" [style.background]="wheelBackground()" [style.transform]="'rotate('+wheelRotation()+'deg)'">@for (category of availableCategories();track category;let i=$index){<span class="wheel-label" [style.transform]="wheelLabelTransform(i)">{{wheelLabel(category)}}</span>}<div class="wheel-center"><span class="center-logo">C</span><span>CRAVE</span></div></div></div></div><button type="button" class="spin-button" (click)="spinWheel()" [disabled]="isLoading()||!!loadError()||isSpinning()||availableCategories().length===0">@if (isSpinning()){Spinning…}@else{Spin the Wheel}<span>↗</span></button><p class="bottom-note">@if (isSpinning()){Finding your food category…}@else{Your next meal category is one spin away.}</p></div>
-        <div class="catalogue-status">@if (isLoading()){<span class="status-dot loading-dot"></span> Loading food catalogue…}@else if(loadError()){<span class="error-text">{{loadError()}}</span>}@else{<span class="status-dot"></span>{{filteredFoods().length}} matching dishes across {{availableCategories().length}} categories}</div>
+      <section class="intro">
+        <p class="eyebrow">YOUR FOOD DISCOVERY PARTNER</p>
+        <h1>What are you craving today?</h1>
+        <p class="subtitle">Choose what you enjoy. Let CraveWheel decide the food category.</p>
       </section>
-      @if (!isLoading()&&!loadError()&&availableCategories().length===0){<p class="empty-message">No categories match these filters. Change your preferences to see more options.</p>}
-      @if (selectedCategory(); as category){<section class="result-card"><p class="eyebrow">YOUR CRAVEWHEEL CATEGORY</p><h2>{{wheelLabel(category)}}</h2><p class="result-intro">Browse dishes in this category that match your preferences.</p>
-        <div class="dish-tools"><input type="search" [value]="dishSearch()" (input)="dishSearch.set($any($event.target).value)" placeholder="Search dishes in this category" aria-label="Search dishes in this category"/><span>{{categoryDishes().length}} dishes</span></div>
-        <div class="dish-list">@for (food of visibleDishes();track food.id){<div class="dish-row"><div><strong>{{food.name}}</strong><span>{{food.type}} · {{food.cuisine}}</span></div><button type="button" class="favorite-button" [class.is-favorite]="isDishFavorite(food)" (click)="toggleDishFavorite(food)" [attr.aria-label]="isDishFavorite(food) ? 'Remove ' + food.name + ' from favourites' : 'Save ' + food.name + ' to favourites'">{{isDishFavorite(food)?'♥':'♡'}}</button></div>}</div>
-        @if (categoryDishes().length===0){<p class="empty-message">No dishes match that search. Try another dish name or ingredient.</p>}
-        @if (hasMoreDishes()&&!dishSearch().trim()){<button type="button" class="text-button view-all-button" (click)="showAllDishes.update(v=>!v)">{{showAllDishes()?'Show fewer dishes':'View all '+categoryDishes().length+' dishes'}}</button>}
-        <div class="result-actions"><button type="button" class="find-restaurants-button" (click)="findRestaurants()">Find Restaurants <span>↗</span></button><button type="button" class="spin-again-button" (click)="spinWheel()">Spin Again <span>↻</span></button></div>
-        @if (showRestaurants()){<section class="restaurant-discovery"><div class="restaurant-heading"><div><p class="eyebrow">LIVE PLACE SEARCH</p><h3>Restaurants near you</h3><p class="restaurant-subtitle">Searching OpenStreetMap places for {{category}}.</p></div></div>
-          <div class="location-search-panel"><button type="button" class="location-current-button" (click)="useCurrentLocation()" [disabled]="isSearchingRestaurants()"><span>◎</span> Use my current location</button><div class="location-manual-row"><input type="text" [value]="locationInput()" (input)="locationInput.set($any($event.target).value)" (keydown.enter)="searchManualLocation()" placeholder="Enter city, area or landmark" aria-label="Search city, area or landmark"/><button type="button" class="location-search-button" (click)="searchManualLocation()" [disabled]="isSearchingRestaurants()">Search</button></div>@if (locationMessage()){<p class="location-message">{{locationMessage()}}</p>}</div>
-          @if (isSearchingRestaurants()){<div class="restaurant-loading"><span class="status-dot loading-dot"></span> Finding nearby places…</div>}@else if(restaurantLoadError()){<div class="empty-restaurants"><p>{{restaurantLoadError()}}</p><button type="button" class="text-button" (click)="activeLocation()&&searchRestaurantsAtForRetry()">Try again</button></div>}@else if(restaurants().length>0){
-            <div class="restaurant-sort-row"><label for="restaurant-sort">Sort restaurants</label><select id="restaurant-sort" [value]="restaurantSort()" (change)="restaurantSort.set($any($event.target).value);currentRestaurantPage.set(1)"><option value="relevance">Best match + nearest</option><option value="nearest">Nearest first</option></select></div>
-            <div class="restaurant-list">@for (restaurant of paginatedRestaurants();track restaurant.id){<article class="restaurant-item"><div class="restaurant-item-top"><div><h4>{{restaurant.name}}</h4><p class="restaurant-area">{{restaurant.area}} · {{distanceLabel(restaurant)}}</p></div>@if (restaurant.categoryMatch){<span class="restaurant-category">Possible match</span>}</div>@if (restaurant.cuisine){<p class="restaurant-known-for">{{restaurant.cuisine}}</p>}<p class="restaurant-address">{{restaurant.address}}</p><div class="restaurant-links">@if (restaurant.phone){<a [href]="'tel:'+restaurant.phone">Call restaurant</a>}@if (restaurant.website){<a [href]="restaurant.website" target="_blank" rel="noopener noreferrer">Website ↗</a>}<button type="button" class="restaurant-directions-button" (click)="openRestaurantDirections(restaurant)">Get Directions ↗</button><button type="button" class="restaurant-details-toggle" (click)="toggleRestaurantDetails(restaurant.id)">{{expandedRestaurantId()===restaurant.id?'Hide details':'More details'}}</button><button type="button" class="favorite-button" [class.is-favorite]="isRestaurantFavorite(restaurant)" (click)="toggleRestaurantFavorite(restaurant)" [attr.aria-label]="isRestaurantFavorite(restaurant)?'Remove restaurant from favourites':'Save restaurant to favourites'">{{isRestaurantFavorite(restaurant)?'♥':'♡'}}</button></div>
-              @if (expandedRestaurantId()===restaurant.id){<div class="restaurant-detail-panel"><h5>Restaurant information</h5><div class="restaurant-detail-grid">@if (restaurant.cuisine){<div><span>Cuisine tags</span><strong>{{restaurant.cuisine}}</strong></div>}@if (restaurant.openingHours){<div><span>Opening hours (map data)</span><strong>{{restaurant.openingHours}}</strong></div>}@if (restaurant.openingHoursNote){<div><span>Hours note</span><strong>{{restaurant.openingHoursNote}}</strong></div>}@if (restaurant.operator){<div><span>Operator</span><strong>{{restaurant.operator}}</strong></div>}@if (restaurant.takeaway){<div><span>Takeaway</span><strong>{{restaurant.takeaway}}</strong></div>}@if (restaurant.delivery){<div><span>Delivery</span><strong>{{restaurant.delivery}}</strong></div>}@if (restaurant.wheelchair){<div><span>Wheelchair access</span><strong>{{restaurant.wheelchair}}</strong></div>}<div><span>Coordinates</span><strong>{{restaurant.lat.toFixed(5)}}, {{restaurant.lon.toFixed(5)}}</strong></div></div><p class="detail-data-note">Information is limited to what OpenStreetMap contributors have recorded. Missing details do not mean the service is unavailable.</p></div>}</article>}</div>
-            @if (totalRestaurantPages()>1){<nav class="restaurant-pagination" aria-label="Restaurant result pages"><button type="button" class="page-nav-button" (click)="previousRestaurantPage()" [disabled]="currentRestaurantPage()===1">Previous</button><div class="page-number-group">@for (page of restaurantPageNumbers();track page){<button type="button" class="page-number" [class.active]="currentRestaurantPage()===page" [attr.aria-current]="currentRestaurantPage()===page?'page':null" (click)="goToRestaurantPage(page)">{{page}}</button>}</div><button type="button" class="page-nav-button" (click)="nextRestaurantPage()" [disabled]="currentRestaurantPage()===totalRestaurantPages()">Next</button></nav><p class="pagination-caption">Showing {{(currentRestaurantPage()-1)*restaurantsPerPage+1}}–{{restaurantPageEnd()}} of {{sortedRestaurants().length}} places</p>}}
-          }@else if(activeLocation()){<div class="empty-restaurants"><strong>No places found yet.</strong><p>Try a different nearby area. OpenStreetMap coverage varies by location.</p><button type="button" class="text-button" (click)="searchRestaurantsAtForRetry()">Search again</button></div>}
-          <p class="restaurant-disclaimer">Place data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>, available under the Open Database License (ODbL). Cuisine matching is approximate, not a verified menu or popularity ranking.</p>
-        </section>}
-      </section>}
+
+      <section class="filter-card">
+        <div class="section-heading">
+          <h2>Choose your preferences</h2>
+          <p>These filters apply to dishes inside every category.</p>
+        </div>
+
+        <div class="filter-group">
+          <label>Food preference</label>
+          <div class="option-group">
+            <button type="button" class="option" [class.active]="foodPreference()==='Veg'" (click)="selectFoodPreference('Veg')">Veg</button>
+            <button type="button" class="option" [class.active]="foodPreference()==='Non-Veg'" (click)="selectFoodPreference('Non-Veg')">Non-Veg</button>
+            <button type="button" class="option" [class.active]="foodPreference()==='Both'" (click)="selectFoodPreference('Both')">Both</button>
+          </div>
+        </div>
+
+        <div class="wheel-section">
+          <div class="wheel-heading">
+            <h2>Let the wheel decide</h2>
+            <p>The wheel randomly selects a food category.</p>
+          </div>
+
+          <div class="wheel-stage">
+            <div class="wheel-pointer"></div>
+            <div class="wheel-outer">
+              <div class="wheel" [style.background]="wheelBackground()" [style.transform]="'rotate('+wheelRotation()+'deg)'">
+                @for (category of availableCategories(); track category; let i=$index) {
+                  <span class="wheel-label" [style.transform]="wheelLabelTransform(i)">{{wheelLabel(category)}}</span>
+                }
+                <div class="wheel-center">
+                  <span class="center-logo">C</span>
+                  <span>CRAVE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="spin-button" (click)="spinWheel()" [disabled]="isLoading()||!!loadError()||isSpinning()||availableCategories().length===0">
+            @if (isSpinning()) {
+              Spinning…
+            } @else {
+              Spin the Wheel
+            }
+            <span>↗</span>
+          </button>
+
+          <p class="bottom-note">
+            @if (isSpinning()) {
+              Finding your food category…
+            } @else {
+              Your next meal category is one spin away.
+            }
+          </p>
+        </div>
+
+        <div class="catalogue-status">
+          @if (isLoading()) {
+            <span class="status-dot loading-dot"></span>
+            Loading food catalogue…
+          } @else if (loadError()) {
+            <span class="error-text">{{loadError()}}</span>
+          } @else {
+            <span class="status-dot"></span>
+            {{filteredFoods().length}} matching dishes across {{availableCategories().length}} categories
+          }
+        </div>
+      </section>
+
+      @if (!isLoading() && !loadError() && availableCategories().length===0) {
+        <p class="empty-message">No categories match these filters. Change your preferences to see more options.</p>
+      }
+
+      @if (selectedCategory(); as category) {
+        <section class="result-card">
+          <p class="eyebrow">YOUR CRAVEWHEEL CATEGORY</p>
+          <h2>{{wheelLabel(category)}}</h2>
+          <p class="result-intro">Browse dishes in this category that match your preferences.</p>
+
+          <div class="dish-tools">
+            <input type="search" [value]="dishSearch()" (input)="dishSearch.set($any($event.target).value)" placeholder="Search dishes in this category" aria-label="Search dishes in this category"/>
+            <span>{{categoryDishes().length}} dishes</span>
+          </div>
+
+          <div class="dish-list">
+            @for (food of visibleDishes(); track food.id) {
+              <div class="dish-row">
+                <div>
+                  <strong>{{food.name}}</strong>
+                  <span>{{food.type}} · {{food.cuisine}}</span>
+                </div>
+                <button type="button" class="favorite-button" [class.is-favorite]="isDishFavorite(food)" (click)="toggleDishFavorite(food)" [attr.aria-label]="isDishFavorite(food) ? 'Remove ' + food.name + ' from favourites' : 'Save ' + food.name + ' to favourites'">
+                  {{isDishFavorite(food)?'♥':'♡'}}
+                </button>
+              </div>
+            }
+          </div>
+
+          @if (categoryDishes().length===0) {
+            <p class="empty-message">No dishes match that search. Try another dish name or ingredient.</p>
+          }
+
+          @if (hasMoreDishes() && !dishSearch().trim()) {
+            <button type="button" class="text-button view-all-button" (click)="showAllDishes.update(v=>!v)">
+              {{showAllDishes()?'Show fewer dishes':'View all '+categoryDishes().length+' dishes'}}
+            </button>
+          }
+
+          <div class="result-actions">
+            <button type="button" class="find-restaurants-button" (click)="findRestaurants()">Find Restaurants <span>↗</span></button>
+            <button type="button" class="spin-again-button" (click)="spinWheel()">Spin Again <span>↻</span></button>
+          </div>
+
+          @if (showRestaurants()) {
+            <section class="restaurant-discovery">
+              <div class="restaurant-heading">
+                <div>
+                  <p class="eyebrow">LIVE PLACE SEARCH</p>
+                  <h3>Restaurants near you</h3>
+                  <p class="restaurant-subtitle">Searching OpenStreetMap places for {{category}}.</p>
+                </div>
+              </div>
+
+              <div class="location-search-panel">
+                <button type="button" class="location-current-button" (click)="useCurrentLocation()" [disabled]="isSearchingRestaurants()">
+                  <span>◎</span> Use my current location
+                </button>
+                <div class="location-manual-row">
+                  <input type="text" [value]="locationInput()" (input)="locationInput.set($any($event.target).value)" (keydown.enter)="searchManualLocation()" placeholder="Enter city, area or landmark" aria-label="Search city, area or landmark"/>
+                  <button type="button" class="location-search-button" (click)="searchManualLocation()" [disabled]="isSearchingRestaurants()">Search</button>
+                </div>
+                @if (locationMessage()) {
+                  <p class="location-message">{{locationMessage()}}</p>
+                }
+              </div>
+
+              @if (isSearchingRestaurants()) {
+                <div class="restaurant-loading">
+                  <span class="status-dot loading-dot"></span>
+                  Finding nearby places…
+                </div>
+              } @else if (restaurantLoadError()) {
+                <div class="empty-restaurants">
+                  <p>{{restaurantLoadError()}}</p>
+                  <button type="button" class="text-button" (click)="activeLocation()&&searchRestaurantsAtForRetry()">Try again</button>
+                </div>
+              } @else if (restaurants().length>0) {
+                <div class="restaurant-sort-row">
+                  <label for="restaurant-sort">Sort restaurants</label>
+                  <select id="restaurant-sort" [value]="restaurantSort()" (change)="restaurantSort.set($any($event.target).value);currentRestaurantPage.set(1)">
+                    <option value="relevance">Best match + nearest</option>
+                    <option value="nearest">Nearest first</option>
+                  </select>
+                </div>
+
+                <div class="restaurant-list">
+                  @for (restaurant of paginatedRestaurants(); track restaurant.id) {
+                    <article class="restaurant-item">
+                      <div class="restaurant-item-top">
+                        <div>
+                          <h4>{{restaurant.name}}</h4>
+                          <p class="restaurant-area">{{restaurant.area}} · {{distanceLabel(restaurant)}}</p>
+                        </div>
+                        @if (restaurant.categoryMatch) {
+                          <span class="restaurant-category">Possible match</span>
+                        }
+                      </div>
+
+                      @if (restaurant.cuisine) {
+                        <p class="restaurant-known-for">{{restaurant.cuisine}}</p>
+                      }
+                      <p class="restaurant-address">{{restaurant.address}}</p>
+
+                      <div class="restaurant-links">
+                        @if (restaurant.phone) {
+                          <a [href]="'tel:'+restaurant.phone">Call restaurant</a>
+                        }
+                        @if (restaurant.website) {
+                          <a [href]="restaurant.website" target="_blank" rel="noopener noreferrer">Website ↗</a>
+                        }
+                        <button type="button" class="restaurant-directions-button" (click)="openRestaurantDirections(restaurant)">Get Directions ↗</button>
+                        <button type="button" class="restaurant-details-toggle" (click)="toggleRestaurantDetails(restaurant.id)">
+                          {{expandedRestaurantId()===restaurant.id?'Hide details':'More details'}}
+                        </button>
+                        <button type="button" class="favorite-button" [class.is-favorite]="isRestaurantFavorite(restaurant)" (click)="toggleRestaurantFavorite(restaurant)" [attr.aria-label]="isRestaurantFavorite(restaurant)?'Remove restaurant from favourites':'Save restaurant to favourites'">
+                          {{isRestaurantFavorite(restaurant)?'♥':'♡'}}
+                        </button>
+                      </div>
+
+                      @if (expandedRestaurantId()===restaurant.id) {
+                        <div class="restaurant-detail-panel">
+                          <h5>Restaurant information</h5>
+                          <div class="restaurant-detail-grid">
+                            @if (restaurant.cuisine) {
+                              <div><span>Cuisine tags</span><strong>{{restaurant.cuisine}}</strong></div>
+                            }
+                            @if (restaurant.openingHours) {
+                              <div><span>Opening hours (map data)</span><strong>{{restaurant.openingHours}}</strong></div>
+                            }
+                            @if (restaurant.openingHoursNote) {
+                              <div><span>Hours note</span><strong>{{restaurant.openingHoursNote}}</strong></div>
+                            }
+                            @if (restaurant.operator) {
+                              <div><span>Operator</span><strong>{{restaurant.operator}}</strong></div>
+                            }
+                            @if (restaurant.takeaway) {
+                              <div><span>Takeaway</span><strong>{{restaurant.takeaway}}</strong></div>
+                            }
+                            @if (restaurant.delivery) {
+                              <div><span>Delivery</span><strong>{{restaurant.delivery}}</strong></div>
+                            }
+                            @if (restaurant.wheelchair) {
+                              <div><span>Wheelchair access</span><strong>{{restaurant.wheelchair}}</strong></div>
+                            }
+                            <div>
+                              <span>Coordinates</span>
+                              <strong>{{restaurant.lat.toFixed(5)}}, {{restaurant.lon.toFixed(5)}}</strong>
+                            </div>
+                          </div>
+                          <p class="detail-data-note">Information is limited to what OpenStreetMap contributors have recorded. Missing details do not mean the service is unavailable.</p>
+                        </div>
+                      }
+                    </article>
+                  }
+                </div>
+
+                @if (totalRestaurantPages()>1) {
+                  <nav class="restaurant-pagination" aria-label="Restaurant result pages">
+                    <button type="button" class="page-nav-button" (click)="previousRestaurantPage()" [disabled]="currentRestaurantPage()===1">Previous</button>
+                    <div class="page-number-group">
+                      @for (page of restaurantPageNumbers(); track page) {
+                        <button type="button" class="page-number" [class.active]="currentRestaurantPage()===page" [attr.aria-current]="currentRestaurantPage()===page?'page':null" (click)="goToRestaurantPage(page)">{{page}}</button>
+                      }
+                    </div>
+                    <button type="button" class="page-nav-button" (click)="nextRestaurantPage()" [disabled]="currentRestaurantPage()===totalRestaurantPages()">Next</button>
+                  </nav>
+                  <p class="pagination-caption">Showing {{(currentRestaurantPage()-1)*restaurantsPerPage+1}}–{{restaurantPageEnd()}} of {{sortedRestaurants().length}} places</p>
+                }
+              } @else if (activeLocation()) {
+                <div class="empty-restaurants">
+                  <strong>No places found yet.</strong>
+                  <p>Try a different nearby area. OpenStreetMap coverage varies by location.</p>
+                  <button type="button" class="text-button" (click)="searchRestaurantsAtForRetry()">Search again</button>
+                </div>
+              }
+
+              <p class="restaurant-disclaimer">
+                Place data ©
+                <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>,
+                available under the Open Database License (ODbL). Cuisine matching is approximate, not a verified menu or popularity ranking.
+              </p>
+            </section>
+          }
+        </section>
+      }
     } @else {
-      <section class="favorites-page"><p class="eyebrow">YOUR SAVED PICKS</p><h1>Favourites</h1><p class="subtitle">Your saved dishes and restaurants on this device.</p>
-        <section class="favorites-section"><h2>Saved dishes <span>{{favoriteFoods().length}}</span></h2>@if (favoriteFoods().length){<div class="dish-list">@for (food of favoriteFoods();track food.id){<div class="dish-row"><div><strong>{{food.name}}</strong><span>{{food.type}} · {{food.category}}</span></div><button type="button" class="favorite-button is-favorite" (click)="toggleDishFavorite(food)" aria-label="Remove dish from favourites">♥</button></div>}</div>}@else{<p class="empty-restaurants">No favourite dishes yet. Save dishes using the heart icon.</p>}</section>
-        <section class="favorites-section"><h2>Saved restaurants <span>{{favoriteRestaurants().length}}</span></h2>@if (favoriteRestaurants().length){<div class="restaurant-list">@for (r of favoriteRestaurants();track r.id){<article class="restaurant-item"><div class="restaurant-item-top"><div><h4>{{r.name}}</h4><p class="restaurant-area">{{r.area}}</p></div><button type="button" class="favorite-button is-favorite" (click)="toggleRestaurantFavorite(r)" aria-label="Remove restaurant from favourites">♥</button></div><p class="restaurant-address">{{r.address}}</p><div class="restaurant-links"><button type="button" class="restaurant-directions-button" (click)="openRestaurantDirections(r)">Get Directions ↗</button>@if (r.phone){<a [href]="'tel:'+r.phone">Call restaurant</a>}</div></article>}</div>}@else{<p class="empty-restaurants">No favourite restaurants yet. Save restaurants using the heart icon.</p>}</section>
+      <section class="favorites-page">
+        <p class="eyebrow">YOUR SAVED PICKS</p>
+        <h1>Favourites</h1>
+        <p class="subtitle">Your saved dishes and restaurants on this device.</p>
+
+        <section class="favorites-section">
+          <h2>Saved dishes <span>{{favoriteFoods().length}}</span></h2>
+          @if (favoriteFoods().length) {
+            <div class="dish-list">
+              @for (food of favoriteFoods(); track food.id) {
+                <div class="dish-row">
+                  <div>
+                    <strong>{{food.name}}</strong>
+                    <span>{{food.type}} · {{food.category}}</span>
+                  </div>
+                  <button type="button" class="favorite-button is-favorite" (click)="toggleDishFavorite(food)" aria-label="Remove dish from favourites">♥</button>
+                </div>
+              }
+            </div>
+          } @else {
+            <p class="empty-restaurants">No favourite dishes yet. Save dishes using the heart icon.</p>
+          }
+        </section>
+
+        <section class="favorites-section">
+          <h2>Saved restaurants <span>{{favoriteRestaurants().length}}</span></h2>
+          @if (favoriteRestaurants().length) {
+            <div class="restaurant-list">
+              @for (r of favoriteRestaurants(); track r.id) {
+                <article class="restaurant-item">
+                  <div class="restaurant-item-top">
+                    <div>
+                      <h4>{{r.name}}</h4>
+                      <p class="restaurant-area">{{r.area}}</p>
+                    </div>
+                    <button type="button" class="favorite-button is-favorite" (click)="toggleRestaurantFavorite(r)" aria-label="Remove restaurant from favourites">♥</button>
+                  </div>
+                  <p class="restaurant-address">{{r.address}}</p>
+                  <div class="restaurant-links">
+                    <button type="button" class="restaurant-directions-button" (click)="openRestaurantDirections(r)">Get Directions ↗</button>
+                    @if (r.phone) {
+                      <a [href]="'tel:'+r.phone">Call restaurant</a>
+                    }
+                  </div>
+                </article>
+              }
+            </div>
+          } @else {
+            <p class="empty-restaurants">No favourite restaurants yet. Save restaurants using the heart icon.</p>
+          }
+        </section>
       </section>
     }
-  </main><footer class="footer" id="about"><p>CraveWheel · Spin. Discover. Eat.</p><p>Food discovery made simple.</p></footer>
-</div><router-outlet/>
+  </main>
+
+  <footer class="footer" id="about">
+    <p>CraveWheel · Spin. Discover. Eat.</p>
+    <p>Food discovery made simple.</p>
+  </footer>
+</div>
