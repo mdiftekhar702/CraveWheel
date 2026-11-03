@@ -1,0 +1,2426 @@
+[
+  {
+    "id": 1,
+    "name": "Chicken Biryani",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 220,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "onion",
+      "yogurt",
+      "spices"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 2,
+    "name": "Mutton Biryani",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 280,
+    "ingredients": [
+      "mutton",
+      "rice",
+      "onion",
+      "yogurt",
+      "spices"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 3,
+    "name": "Veg Biryani",
+    "type": "Veg",
+    "cuisine": "Hyderabadi",
+    "price": 160,
+    "ingredients": [
+      "rice",
+      "vegetables",
+      "onion",
+      "spices"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 4,
+    "name": "Hyderabadi Chicken 65",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 190,
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "chili",
+      "curry leaves"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 5,
+    "name": "Chicken 65",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 180,
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "chili",
+      "curry leaves"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 6,
+    "name": "Apollo Fish",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 260,
+    "ingredients": [
+      "fish",
+      "corn flour",
+      "chili",
+      "lemon"
+    ],
+    "category": "Seafood"
+  },
+  {
+    "id": 7,
+    "name": "Mutton Haleem",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 180,
+    "ingredients": [
+      "mutton",
+      "wheat",
+      "lentils",
+      "ghee",
+      "spices"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 8,
+    "name": "Chicken Haleem",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 160,
+    "ingredients": [
+      "chicken",
+      "wheat",
+      "lentils",
+      "ghee",
+      "spices"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 9,
+    "name": "Marag",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 220,
+    "ingredients": [
+      "mutton",
+      "milk",
+      "almonds",
+      "spices"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 10,
+    "name": "Pathar Ka Gosht",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 300,
+    "ingredients": [
+      "mutton",
+      "ginger",
+      "garlic",
+      "spices"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 11,
+    "name": "Hyderabadi Khichdi",
+    "type": "Veg",
+    "cuisine": "Hyderabadi",
+    "price": 100,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "ghee",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 12,
+    "name": "Kheema Khichdi",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 190,
+    "ingredients": [
+      "minced meat",
+      "rice",
+      "lentils",
+      "ghee"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 13,
+    "name": "Bagara Baingan",
+    "type": "Veg",
+    "cuisine": "Hyderabadi",
+    "price": 150,
+    "ingredients": [
+      "eggplant",
+      "peanuts",
+      "sesame",
+      "tamarind"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 14,
+    "name": "Mirchi Ka Salan",
+    "type": "Veg",
+    "cuisine": "Hyderabadi",
+    "price": 120,
+    "ingredients": [
+      "green chili",
+      "peanuts",
+      "sesame",
+      "tamarind"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 15,
+    "name": "Double Ka Meetha",
+    "type": "Veg",
+    "cuisine": "Hyderabadi",
+    "price": 100,
+    "ingredients": [
+      "bread",
+      "milk",
+      "sugar",
+      "ghee",
+      "cardamom"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 16,
+    "name": "Qubani Ka Meetha",
+    "type": "Veg",
+    "cuisine": "Hyderabadi",
+    "price": 130,
+    "ingredients": [
+      "apricot",
+      "sugar",
+      "cream"
+    ],
+    "category": "Hyderabadi"
+  },
+  {
+    "id": 17,
+    "name": "Nihari",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 260,
+    "ingredients": [
+      "beef",
+      "wheat",
+      "ginger",
+      "spices"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 18,
+    "name": "Mutton Dalcha",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 200,
+    "ingredients": [
+      "mutton",
+      "lentils",
+      "bottle gourd",
+      "tamarind"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 19,
+    "name": "Chicken Shikampuri Kebab",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 220,
+    "ingredients": [
+      "chicken",
+      "lentils",
+      "yogurt",
+      "spices"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 20,
+    "name": "Seekh Kebab",
+    "type": "Non-Veg",
+    "cuisine": "Hyderabadi",
+    "price": 240,
+    "ingredients": [
+      "minced meat",
+      "onion",
+      "ginger",
+      "spices"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 21,
+    "name": "Dosa",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 70,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "salt"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 22,
+    "name": "Masala Dosa",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 90,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "potato",
+      "onion"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 23,
+    "name": "Mysore Masala Dosa",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 110,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "potato",
+      "red chili"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 24,
+    "name": "Onion Dosa",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 90,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "onion"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 25,
+    "name": "Rava Dosa",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 100,
+    "ingredients": [
+      "semolina",
+      "rice flour",
+      "onion",
+      "cumin"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 26,
+    "name": "Pesarattu",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 90,
+    "ingredients": [
+      "green gram",
+      "ginger",
+      "green chili"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 27,
+    "name": "Pesarattu Upma",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 120,
+    "ingredients": [
+      "green gram",
+      "semolina",
+      "ginger",
+      "onion"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 28,
+    "name": "Idli",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 50,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "salt"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 29,
+    "name": "Thatte Idli",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 65,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "salt"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 30,
+    "name": "Medu Vada",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 60,
+    "ingredients": [
+      "black gram",
+      "curry leaves",
+      "pepper"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 31,
+    "name": "Sambar Idli",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 75,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "toor dal",
+      "vegetables"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 32,
+    "name": "Ven Pongal",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 90,
+    "ingredients": [
+      "rice",
+      "moong dal",
+      "ghee",
+      "pepper"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 33,
+    "name": "Upma",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 65,
+    "ingredients": [
+      "semolina",
+      "onion",
+      "mustard seeds",
+      "curry leaves"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 34,
+    "name": "Uttapam",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 100,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "onion",
+      "tomato"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 35,
+    "name": "Tomato Uttapam",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 110,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "tomato",
+      "green chili"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 36,
+    "name": "Curd Rice",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 80,
+    "ingredients": [
+      "rice",
+      "curd",
+      "mustard seeds",
+      "curry leaves"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 37,
+    "name": "Lemon Rice",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 85,
+    "ingredients": [
+      "rice",
+      "lemon",
+      "peanuts",
+      "turmeric"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 38,
+    "name": "Tamarind Rice",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 90,
+    "ingredients": [
+      "rice",
+      "tamarind",
+      "peanuts",
+      "sesame"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 39,
+    "name": "South Indian Meals",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 140,
+    "ingredients": [
+      "rice",
+      "sambar",
+      "rasam",
+      "vegetables",
+      "curd"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 40,
+    "name": "Chicken Chettinad",
+    "type": "Non-Veg",
+    "cuisine": "South Indian",
+    "price": 260,
+    "ingredients": [
+      "chicken",
+      "coconut",
+      "black pepper",
+      "spices"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 41,
+    "name": "Andhra Chicken Curry",
+    "type": "Non-Veg",
+    "cuisine": "South Indian",
+    "price": 240,
+    "ingredients": [
+      "chicken",
+      "onion",
+      "tomato",
+      "chili"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 42,
+    "name": "Andhra Fish Pulusu",
+    "type": "Non-Veg",
+    "cuisine": "South Indian",
+    "price": 250,
+    "ingredients": [
+      "fish",
+      "tamarind",
+      "tomato",
+      "spices"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 43,
+    "name": "Egg Dosa",
+    "type": "Non-Veg",
+    "cuisine": "South Indian",
+    "price": 100,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "egg",
+      "onion"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 44,
+    "name": "Chicken 65 Dosa",
+    "type": "Non-Veg",
+    "cuisine": "South Indian",
+    "price": 160,
+    "ingredients": [
+      "rice",
+      "lentils",
+      "chicken",
+      "chili"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 45,
+    "name": "Appam with Stew",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 130,
+    "ingredients": [
+      "rice",
+      "coconut milk",
+      "vegetables"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 46,
+    "name": "Kerala Parotta",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 50,
+    "ingredients": [
+      "wheat flour",
+      "oil",
+      "salt"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 47,
+    "name": "Puttu and Kadala Curry",
+    "type": "Veg",
+    "cuisine": "South Indian",
+    "price": 110,
+    "ingredients": [
+      "rice flour",
+      "coconut",
+      "black chickpeas"
+    ],
+    "category": "South Indian"
+  },
+  {
+    "id": 48,
+    "name": "Butter Chicken",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 260,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream",
+      "spices"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 49,
+    "name": "Chicken Tikka Masala",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 280,
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "tomato",
+      "cream"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 50,
+    "name": "Paneer Butter Masala",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 220,
+    "ingredients": [
+      "paneer",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 51,
+    "name": "Shahi Paneer",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 230,
+    "ingredients": [
+      "paneer",
+      "cream",
+      "cashew",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 52,
+    "name": "Palak Paneer",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 200,
+    "ingredients": [
+      "paneer",
+      "spinach",
+      "garlic",
+      "cream"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 53,
+    "name": "Dal Makhani",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 180,
+    "ingredients": [
+      "black lentils",
+      "kidney beans",
+      "butter",
+      "cream"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 54,
+    "name": "Chole Bhature",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 130,
+    "ingredients": [
+      "chickpeas",
+      "wheat flour",
+      "onion",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 55,
+    "name": "Rajma Chawal",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 140,
+    "ingredients": [
+      "kidney beans",
+      "rice",
+      "tomato",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 56,
+    "name": "Kadai Paneer",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 220,
+    "ingredients": [
+      "paneer",
+      "capsicum",
+      "tomato",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 57,
+    "name": "Aloo Paratha",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 90,
+    "ingredients": [
+      "wheat flour",
+      "potato",
+      "butter",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 58,
+    "name": "Gobi Paratha",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 100,
+    "ingredients": [
+      "wheat flour",
+      "cauliflower",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 59,
+    "name": "Paneer Tikka",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 220,
+    "ingredients": [
+      "paneer",
+      "yogurt",
+      "capsicum",
+      "spices"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 60,
+    "name": "Chicken Tandoori",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 280,
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "lemon",
+      "spices"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 61,
+    "name": "Seekh Kebab Roll",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 160,
+    "ingredients": [
+      "minced meat",
+      "wheat wrap",
+      "onion",
+      "mint"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 62,
+    "name": "Dal Tadka",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 150,
+    "ingredients": [
+      "toor dal",
+      "tomato",
+      "garlic",
+      "ghee"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 63,
+    "name": "Malai Kofta",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 210,
+    "ingredients": [
+      "potato",
+      "paneer",
+      "cream",
+      "cashew"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 64,
+    "name": "Veg Pulao",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 140,
+    "ingredients": [
+      "rice",
+      "vegetables",
+      "whole spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 65,
+    "name": "Chicken Pulao",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 200,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "onion",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 66,
+    "name": "Aloo Gobi",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 160,
+    "ingredients": [
+      "potato",
+      "cauliflower",
+      "tomato",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 67,
+    "name": "Matar Paneer",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 190,
+    "ingredients": [
+      "paneer",
+      "peas",
+      "tomato",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 68,
+    "name": "Chicken Korma",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 270,
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "cashew",
+      "spices"
+    ],
+    "category": "North Indian"
+  },
+  {
+    "id": 69,
+    "name": "Veg Manchurian",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 150,
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "corn flour",
+      "soy sauce"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 70,
+    "name": "Gobi Manchurian",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 160,
+    "ingredients": [
+      "cauliflower",
+      "corn flour",
+      "soy sauce",
+      "chili"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 71,
+    "name": "Chilli Paneer",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 190,
+    "ingredients": [
+      "paneer",
+      "capsicum",
+      "soy sauce",
+      "green chili"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 72,
+    "name": "Chilli Chicken",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 210,
+    "ingredients": [
+      "chicken",
+      "capsicum",
+      "soy sauce",
+      "green chili"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 73,
+    "name": "Chicken Fried Rice",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 190,
+    "ingredients": [
+      "rice",
+      "chicken",
+      "egg",
+      "soy sauce"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 74,
+    "name": "Veg Fried Rice",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 140,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "beans",
+      "soy sauce"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 75,
+    "name": "Schezwan Fried Rice",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 160,
+    "ingredients": [
+      "rice",
+      "schezwan sauce",
+      "vegetables"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 76,
+    "name": "Schezwan Chicken Fried Rice",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 220,
+    "ingredients": [
+      "rice",
+      "chicken",
+      "schezwan sauce",
+      "egg"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 77,
+    "name": "Chicken Hakka Noodles",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 190,
+    "ingredients": [
+      "noodles",
+      "chicken",
+      "cabbage",
+      "soy sauce"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 78,
+    "name": "Veg Hakka Noodles",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 150,
+    "ingredients": [
+      "noodles",
+      "cabbage",
+      "carrot",
+      "soy sauce"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 79,
+    "name": "Schezwan Noodles",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 160,
+    "ingredients": [
+      "noodles",
+      "schezwan sauce",
+      "vegetables"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 80,
+    "name": "Chicken Manchow Soup",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 110,
+    "ingredients": [
+      "chicken",
+      "cabbage",
+      "carrot",
+      "soy sauce"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 81,
+    "name": "Sweet Corn Soup",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 90,
+    "ingredients": [
+      "sweet corn",
+      "vegetable stock",
+      "pepper"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 82,
+    "name": "Hot and Sour Soup",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 100,
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "mushroom",
+      "soy sauce"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 83,
+    "name": "Chicken Lollipop",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 220,
+    "ingredients": [
+      "chicken",
+      "corn flour",
+      "ginger",
+      "garlic"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 84,
+    "name": "Dragon Chicken",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 240,
+    "ingredients": [
+      "chicken",
+      "cashew",
+      "capsicum",
+      "chili"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 85,
+    "name": "American Chopsuey",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 210,
+    "ingredients": [
+      "noodles",
+      "chicken",
+      "vegetables",
+      "tomato sauce"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 86,
+    "name": "Veg Spring Rolls",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 130,
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "spring roll sheets"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 87,
+    "name": "Chicken Momos",
+    "type": "Non-Veg",
+    "cuisine": "Chinese",
+    "price": 140,
+    "ingredients": [
+      "chicken",
+      "flour",
+      "onion",
+      "ginger"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 88,
+    "name": "Veg Momos",
+    "type": "Veg",
+    "cuisine": "Chinese",
+    "price": 120,
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "flour",
+      "ginger"
+    ],
+    "category": "Chinese"
+  },
+  {
+    "id": 89,
+    "name": "Margherita Pizza",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 250,
+    "ingredients": [
+      "cheese",
+      "tomato",
+      "flour",
+      "basil"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 90,
+    "name": "Farmhouse Pizza",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 320,
+    "ingredients": [
+      "cheese",
+      "capsicum",
+      "onion",
+      "tomato",
+      "mushroom"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 91,
+    "name": "Paneer Tikka Pizza",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 330,
+    "ingredients": [
+      "paneer",
+      "cheese",
+      "capsicum",
+      "onion"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 92,
+    "name": "Chicken Pizza",
+    "type": "Non-Veg",
+    "cuisine": "Italian",
+    "price": 320,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "tomato",
+      "flour"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 93,
+    "name": "Chicken Pepperoni Pizza",
+    "type": "Non-Veg",
+    "cuisine": "Italian",
+    "price": 380,
+    "ingredients": [
+      "chicken pepperoni",
+      "cheese",
+      "tomato",
+      "flour"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 94,
+    "name": "Pasta Alfredo",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 230,
+    "ingredients": [
+      "pasta",
+      "cream",
+      "cheese",
+      "garlic"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 95,
+    "name": "Pasta Arrabbiata",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 210,
+    "ingredients": [
+      "pasta",
+      "tomato",
+      "garlic",
+      "chili"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 96,
+    "name": "Pesto Pasta",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 250,
+    "ingredients": [
+      "pasta",
+      "basil",
+      "pine nuts",
+      "cheese"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 97,
+    "name": "Chicken Alfredo Pasta",
+    "type": "Non-Veg",
+    "cuisine": "Italian",
+    "price": 290,
+    "ingredients": [
+      "pasta",
+      "chicken",
+      "cream",
+      "cheese"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 98,
+    "name": "Lasagna",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 280,
+    "ingredients": [
+      "pasta sheets",
+      "tomato",
+      "cheese",
+      "vegetables"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 99,
+    "name": "Chicken Lasagna",
+    "type": "Non-Veg",
+    "cuisine": "Italian",
+    "price": 320,
+    "ingredients": [
+      "pasta sheets",
+      "chicken",
+      "tomato",
+      "cheese"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 100,
+    "name": "Garlic Bread",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 110,
+    "ingredients": [
+      "bread",
+      "garlic",
+      "butter",
+      "parsley"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 101,
+    "name": "Cheese Garlic Bread",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 140,
+    "ingredients": [
+      "bread",
+      "garlic",
+      "cheese",
+      "butter"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 102,
+    "name": "Risotto",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 260,
+    "ingredients": [
+      "arborio rice",
+      "mushroom",
+      "stock",
+      "cheese"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 103,
+    "name": "Mushroom Risotto",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 280,
+    "ingredients": [
+      "arborio rice",
+      "mushroom",
+      "butter",
+      "cheese"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 104,
+    "name": "Tiramisu",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 180,
+    "ingredients": [
+      "coffee",
+      "mascarpone",
+      "cocoa",
+      "sugar"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 105,
+    "name": "Panna Cotta",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 160,
+    "ingredients": [
+      "cream",
+      "milk",
+      "sugar",
+      "vanilla"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 106,
+    "name": "Bruschetta",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 150,
+    "ingredients": [
+      "bread",
+      "tomato",
+      "basil",
+      "olive oil"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 107,
+    "name": "Calzone",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 240,
+    "ingredients": [
+      "flour",
+      "cheese",
+      "tomato",
+      "vegetables"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 108,
+    "name": "Chicken Calzone",
+    "type": "Non-Veg",
+    "cuisine": "Italian",
+    "price": 290,
+    "ingredients": [
+      "flour",
+      "chicken",
+      "cheese",
+      "tomato"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 109,
+    "name": "Four Cheese Pizza",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 360,
+    "ingredients": [
+      "mozzarella",
+      "cheddar",
+      "parmesan",
+      "blue cheese"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 110,
+    "name": "Veg Supreme Pizza",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 310,
+    "ingredients": [
+      "cheese",
+      "capsicum",
+      "onion",
+      "olives",
+      "corn"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 111,
+    "name": "Spaghetti Aglio e Olio",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 220,
+    "ingredients": [
+      "spaghetti",
+      "garlic",
+      "olive oil",
+      "chili"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 112,
+    "name": "Chicken Parmesan",
+    "type": "Non-Veg",
+    "cuisine": "Italian",
+    "price": 310,
+    "ingredients": [
+      "chicken",
+      "parmesan",
+      "tomato",
+      "breadcrumbs"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 113,
+    "name": "Ravioli in Tomato Sauce",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 270,
+    "ingredients": [
+      "ravioli",
+      "tomato",
+      "cheese",
+      "basil"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 114,
+    "name": "Spinach Corn Pasta",
+    "type": "Veg",
+    "cuisine": "Italian",
+    "price": 240,
+    "ingredients": [
+      "pasta",
+      "spinach",
+      "corn",
+      "cream"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 115,
+    "name": "Chicken Pesto Pasta",
+    "type": "Non-Veg",
+    "cuisine": "Italian",
+    "price": 300,
+    "ingredients": [
+      "pasta",
+      "chicken",
+      "basil",
+      "cheese"
+    ],
+    "category": "Italian"
+  },
+  {
+    "id": 116,
+    "name": "Chicken Mandi",
+    "type": "Non-Veg",
+    "cuisine": "Arabian",
+    "price": 380,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "spices"
+    ],
+    "category": "Arabian"
+  },
+  {
+    "id": 117,
+    "name": "Mutton Mandi",
+    "type": "Non-Veg",
+    "cuisine": "Arabian",
+    "price": 480,
+    "ingredients": [
+      "mutton",
+      "rice",
+      "spices"
+    ],
+    "category": "Arabian"
+  },
+  {
+    "id": 118,
+    "name": "Faham Chicken",
+    "type": "Non-Veg",
+    "cuisine": "Arabian",
+    "price": 420,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "spices"
+    ],
+    "category": "Arabian"
+  },
+  {
+    "id": 119,
+    "name": "Chicken Madfoon",
+    "type": "Non-Veg",
+    "cuisine": "Arabian",
+    "price": 400,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "spices"
+    ],
+    "category": "Arabian"
+  },
+  {
+    "id": 120,
+    "name": "Mutton Madfoon",
+    "type": "Non-Veg",
+    "cuisine": "Arabian",
+    "price": 520,
+    "ingredients": [
+      "mutton",
+      "rice",
+      "spices"
+    ],
+    "category": "Arabian"
+  },
+  {
+    "id": 121,
+    "name": "Chicken Shawaya",
+    "type": "Non-Veg",
+    "cuisine": "Arabian",
+    "price": 390,
+    "ingredients": [
+      "chicken",
+      "garlic",
+      "spices"
+    ],
+    "category": "Arabian"
+  },
+  {
+    "id": 122,
+    "name": "Chicken Kabsa",
+    "type": "Non-Veg",
+    "cuisine": "Arabian",
+    "price": 380,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "tomato",
+      "spices"
+    ],
+    "category": "Arabian"
+  },
+  {
+    "id": 123,
+    "name": "Mutton Kabsa",
+    "type": "Non-Veg",
+    "cuisine": "Arabian",
+    "price": 500,
+    "ingredients": [
+      "mutton",
+      "rice",
+      "tomato",
+      "spices"
+    ],
+    "category": "Arabian"
+  },
+  {
+    "id": 124,
+    "name": "Lucknowi Mutton Nihari",
+    "type": "Non-Veg",
+    "cuisine": "Lucknowi",
+    "price": 360,
+    "ingredients": [
+      "mutton",
+      "wheat",
+      "spices"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 125,
+    "name": "Lucknowi Chicken Nihari",
+    "type": "Non-Veg",
+    "cuisine": "Lucknowi",
+    "price": 300,
+    "ingredients": [
+      "chicken",
+      "wheat",
+      "spices"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 126,
+    "name": "Galouti Kebab",
+    "type": "Non-Veg",
+    "cuisine": "Lucknowi",
+    "price": 320,
+    "ingredients": [
+      "minced meat",
+      "papaya",
+      "spices"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 127,
+    "name": "Kakori Kebab",
+    "type": "Non-Veg",
+    "cuisine": "Lucknowi",
+    "price": 330,
+    "ingredients": [
+      "minced meat",
+      "onion",
+      "spices"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 128,
+    "name": "Awadhi Chicken Biryani",
+    "type": "Non-Veg",
+    "cuisine": "Lucknowi",
+    "price": 320,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "saffron",
+      "spices"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 129,
+    "name": "Awadhi Mutton Biryani",
+    "type": "Non-Veg",
+    "cuisine": "Lucknowi",
+    "price": 420,
+    "ingredients": [
+      "mutton",
+      "rice",
+      "saffron",
+      "spices"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 130,
+    "name": "Sheermal",
+    "type": "Veg",
+    "cuisine": "Lucknowi",
+    "price": 90,
+    "ingredients": [
+      "flour",
+      "milk",
+      "saffron"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 131,
+    "name": "Tunday Kebab",
+    "type": "Non-Veg",
+    "cuisine": "Lucknowi",
+    "price": 300,
+    "ingredients": [
+      "minced meat",
+      "spices"
+    ],
+    "category": "Lucknowi / Awadhi"
+  },
+  {
+    "id": 132,
+    "name": "Chicken Tikka",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 280,
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "spices"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 134,
+    "name": "Malai Chicken Tikka",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 310,
+    "ingredients": [
+      "chicken",
+      "cream",
+      "cheese"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 135,
+    "name": "Tandoori Roti",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 35,
+    "ingredients": [
+      "wheat",
+      "flour"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 136,
+    "name": "Butter Naan",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "price": 60,
+    "ingredients": [
+      "flour",
+      "butter",
+      "milk"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 137,
+    "name": "Chicken Reshmi Kebab",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "price": 300,
+    "ingredients": [
+      "chicken",
+      "cream",
+      "spices"
+    ],
+    "category": "Tandoori & Mughlai"
+  },
+  {
+    "id": 138,
+    "name": "Veg Shawarma",
+    "type": "Veg",
+    "cuisine": "Middle Eastern",
+    "price": 140,
+    "ingredients": [
+      "bread",
+      "vegetables",
+      "garlic"
+    ],
+    "category": "Burgers & Fast Food"
+  },
+  {
+    "id": 139,
+    "name": "Grilled Chicken Burger",
+    "type": "Non-Veg",
+    "cuisine": "Street Food",
+    "price": 210,
+    "ingredients": [
+      "chicken",
+      "bun",
+      "lettuce"
+    ],
+    "category": "Burgers & Fast Food"
+  },
+  {
+    "id": 140,
+    "name": "Paneer Burger",
+    "type": "Veg",
+    "cuisine": "Street Food",
+    "price": 170,
+    "ingredients": [
+      "paneer",
+      "bun",
+      "lettuce"
+    ],
+    "category": "Burgers & Fast Food"
+  },
+  {
+    "id": 141,
+    "name": "Chicken Club Sandwich",
+    "type": "Non-Veg",
+    "cuisine": "Street Food",
+    "price": 190,
+    "ingredients": [
+      "chicken",
+      "bread",
+      "egg"
+    ],
+    "category": "Burgers & Fast Food"
+  },
+  {
+    "id": 142,
+    "name": "Veg Sandwich",
+    "type": "Veg",
+    "cuisine": "Street Food",
+    "price": 120,
+    "ingredients": [
+      "bread",
+      "vegetables",
+      "cheese"
+    ],
+    "category": "Burgers & Fast Food"
+  },
+  {
+    "id": 143,
+    "name": "Amritsari Kulcha",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "category": "Punjabi",
+    "price": 150,
+    "ingredients": [
+      "flour",
+      "potato",
+      "butter"
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Sarson Ka Saag",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "category": "Punjabi",
+    "price": 220,
+    "ingredients": [
+      "mustard greens",
+      "spinach",
+      "butter"
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Punjabi Chole",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "category": "Punjabi",
+    "price": 180,
+    "ingredients": [
+      "chickpeas",
+      "onion",
+      "tomato"
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Kerala Beef Roast",
+    "type": "Non-Veg",
+    "cuisine": "South Indian",
+    "category": "Kerala",
+    "price": 320,
+    "ingredients": [
+      "beef",
+      "coconut",
+      "spices"
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Kerala Fish Curry",
+    "type": "Non-Veg",
+    "cuisine": "Seafood",
+    "category": "Kerala",
+    "price": 300,
+    "ingredients": [
+      "fish",
+      "coconut",
+      "tamarind"
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Bengali Fish Curry",
+    "type": "Non-Veg",
+    "cuisine": "Seafood",
+    "category": "Bengali",
+    "price": 290,
+    "ingredients": [
+      "fish",
+      "mustard",
+      "potato"
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Kosha Mangsho",
+    "type": "Non-Veg",
+    "cuisine": "North Indian",
+    "category": "Bengali",
+    "price": 360,
+    "ingredients": [
+      "mutton",
+      "onion",
+      "spices"
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Shukto",
+    "type": "Veg",
+    "cuisine": "North Indian",
+    "category": "Bengali",
+    "price": 190,
+    "ingredients": [
+      "mixed vegetables",
+      "mustard",
+      "milk"
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Mishti Doi",
+    "type": "Veg",
+    "cuisine": "Desserts",
+    "category": "Bengali",
+    "price": 100,
+    "ingredients": [
+      "milk",
+      "sugar",
+      "yogurt"
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Vada Pav",
+    "type": "Veg",
+    "cuisine": "Street Food",
+    "category": "Maharashtrian",
+    "price": 60,
+    "ingredients": [
+      "potato",
+      "bread",
+      "chilli"
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Misal Pav",
+    "type": "Veg",
+    "cuisine": "Street Food",
+    "category": "Maharashtrian",
+    "price": 130,
+    "ingredients": [
+      "sprouts",
+      "bread",
+      "spices"
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Puran Poli",
+    "type": "Veg",
+    "cuisine": "Desserts",
+    "category": "Maharashtrian",
+    "price": 90,
+    "ingredients": [
+      "wheat",
+      "lentils",
+      "jaggery"
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Poha",
+    "type": "Veg",
+    "cuisine": "Street Food",
+    "category": "Maharashtrian",
+    "price": 80,
+    "ingredients": [
+      "flattened rice",
+      "onion",
+      "peanuts"
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Pad Thai",
+    "type": "Veg",
+    "cuisine": "Thai",
+    "category": "Thai",
+    "price": 260,
+    "ingredients": [
+      "rice noodles",
+      "peanuts",
+      "lime",
+      "tofu"
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Thai Green Curry",
+    "type": "Veg",
+    "cuisine": "Thai",
+    "category": "Thai",
+    "price": 280,
+    "ingredients": [
+      "coconut milk",
+      "vegetables",
+      "green chilli"
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Thai Red Curry Chicken",
+    "type": "Non-Veg",
+    "cuisine": "Thai",
+    "category": "Thai",
+    "price": 330,
+    "ingredients": [
+      "chicken",
+      "coconut milk",
+      "red curry"
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Tom Yum Soup",
+    "type": "Non-Veg",
+    "cuisine": "Thai",
+    "category": "Thai",
+    "price": 190,
+    "ingredients": [
+      "prawn",
+      "mushroom",
+      "lemongrass"
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Veg Sushi",
+    "type": "Veg",
+    "cuisine": "Japanese",
+    "category": "Japanese",
+    "price": 280,
+    "ingredients": [
+      "rice",
+      "seaweed",
+      "cucumber",
+      "avocado"
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Chicken Teriyaki",
+    "type": "Non-Veg",
+    "cuisine": "Japanese",
+    "category": "Japanese",
+    "price": 340,
+    "ingredients": [
+      "chicken",
+      "soy",
+      "sugar",
+      "ginger"
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Ramen",
+    "type": "Non-Veg",
+    "cuisine": "Japanese",
+    "category": "Japanese",
+    "price": 320,
+    "ingredients": [
+      "noodles",
+      "egg",
+      "broth",
+      "soy"
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Tempura Vegetables",
+    "type": "Veg",
+    "cuisine": "Japanese",
+    "category": "Japanese",
+    "price": 240,
+    "ingredients": [
+      "vegetables",
+      "flour",
+      "oil"
+    ]
+  },
+  {
+    "id": 164,
+    "name": "Veg Tacos",
+    "type": "Veg",
+    "cuisine": "Mexican",
+    "category": "Mexican",
+    "price": 220,
+    "ingredients": [
+      "tortilla",
+      "beans",
+      "lettuce",
+      "cheese"
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Chicken Quesadilla",
+    "type": "Non-Veg",
+    "cuisine": "Mexican",
+    "category": "Mexican",
+    "price": 280,
+    "ingredients": [
+      "tortilla",
+      "chicken",
+      "cheese"
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Burrito Bowl",
+    "type": "Veg",
+    "cuisine": "Mexican",
+    "category": "Mexican",
+    "price": 260,
+    "ingredients": [
+      "rice",
+      "beans",
+      "corn",
+      "salsa"
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Nachos Supreme",
+    "type": "Veg",
+    "cuisine": "Mexican",
+    "category": "Mexican",
+    "price": 230,
+    "ingredients": [
+      "corn chips",
+      "cheese",
+      "beans",
+      "salsa"
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Grilled Chicken Steak",
+    "type": "Non-Veg",
+    "cuisine": "Continental",
+    "category": "Continental",
+    "price": 420,
+    "ingredients": [
+      "chicken",
+      "herbs",
+      "vegetables"
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Fish and Chips",
+    "type": "Non-Veg",
+    "cuisine": "Continental",
+    "category": "Continental",
+    "price": 360,
+    "ingredients": [
+      "fish",
+      "potato",
+      "flour"
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Creamy Mushroom Soup",
+    "type": "Veg",
+    "cuisine": "Continental",
+    "category": "Continental",
+    "price": 180,
+    "ingredients": [
+      "mushroom",
+      "cream",
+      "milk"
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Chicken Stroganoff",
+    "type": "Non-Veg",
+    "cuisine": "Continental",
+    "category": "Continental",
+    "price": 390,
+    "ingredients": [
+      "chicken",
+      "mushroom",
+      "cream"
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Chocolate Brownie",
+    "type": "Veg",
+    "cuisine": "Desserts",
+    "category": "Desserts & Beverages",
+    "price": 140,
+    "ingredients": [
+      "chocolate",
+      "flour",
+      "butter",
+      "sugar"
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Cheesecake",
+    "type": "Veg",
+    "cuisine": "Desserts",
+    "category": "Desserts & Beverages",
+    "price": 190,
+    "ingredients": [
+      "cream cheese",
+      "flour",
+      "sugar"
+    ]
+  },
+  {
+    "id": 174,
+    "name": "Gajar Ka Halwa",
+    "type": "Veg",
+    "cuisine": "Desserts",
+    "category": "Desserts & Beverages",
+    "price": 120,
+    "ingredients": [
+      "carrot",
+      "milk",
+      "sugar",
+      "ghee"
+    ]
+  },
+  {
+    "id": 175,
+    "name": "Masala Chai",
+    "type": "Veg",
+    "cuisine": "Beverages",
+    "category": "Desserts & Beverages",
+    "price": 35,
+    "ingredients": [
+      "tea",
+      "milk",
+      "ginger",
+      "spices"
+    ]
+  },
+  {
+    "id": 176,
+    "name": "Pav Bhaji",
+    "type": "Veg",
+    "cuisine": "Street Food",
+    "category": "Street Food",
+    "price": 140,
+    "ingredients": [
+      "bread",
+      "potato",
+      "tomato",
+      "butter"
+    ]
+  },
+  {
+    "id": 177,
+    "name": "Dahi Puri",
+    "type": "Veg",
+    "cuisine": "Street Food",
+    "category": "Street Food",
+    "price": 80,
+    "ingredients": [
+      "puri",
+      "yogurt",
+      "potato",
+      "chutney"
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Chicken  Shawarma Roll",
+    "type": "Non-Veg",
+    "cuisine": "Street Food",
+    "category": "Street Food",
+    "price": 170,
+    "ingredients": [
+      "chicken",
+      "bread",
+      "garlic",
+      "lettuce"
+    ]
+  }
+]
